@@ -1,0 +1,19 @@
+intent TaskManager:
+    # API Endpoints
+    get /tasks -> list_all_tasks()
+    post /tasks -> create_task(body)
+    get /tasks/{id} -> get_task(id)
+    put /tasks/{id} -> update_task(id, body)
+    delete /tasks/{id} -> delete_task(id)
+    get /tasks/complete -> list_completed_tasks()
+    
+    # Constraints
+    constraint auth: jwt
+    constraint rate: 200/min
+    constraint latency: < 100ms
+    constraint memory: < 64MB
+    constraint availability: 99.9_percent
+    
+    # Invariants
+    invariant task.id is unique
+    invariant task.title is not empty

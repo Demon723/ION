@@ -1,0 +1,7 @@
+intent SimpleService:
+    get /hello -> hello_world()
+    post /data -> process_data(body)
+    
+    constraint auth: jwt
+    constraint rate: 100/min
+    constraint latency: < 50ms

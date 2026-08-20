@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.env
+.venv
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# ION specific
+artifacts/
+*.ionb
+*.proof
+*.audit
+*.twin
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node (if portal expands)
+node_modules/

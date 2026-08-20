@@ -1,0 +1,17 @@
+# ION Platform Requirements
+# Python 3.8+
+# Developer: ADITYA KAMBLE
+
+# Core dependencies (already included in standard library)
+# No external dependencies required for basic functionality
+
+# Optional dependencies for enhanced features:
+# PyPDF2  # For PDF processing (if needed)
+# tree-sitter  # For advanced parsing (future enhancement)
+# z3-solver  # For formal verification (future enhancement)
+# cvc5  # For formal verification (future enhancement)
+
+# Development dependencies:
+# pytest  # For testing
+# black  # For code formatting
+# mypy  # For type checking
